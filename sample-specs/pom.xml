@@ -11,9 +11,14 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
+
         <taglet.dir>${project.basedir}/taglets</taglet.dir>
+
+        <!-- Disable DocLint (Error detection in Javadoc with Java 8) -->
+        <additionalparam>-Xdoclint:none</additionalparam>
     </properties>
 
     <build>
